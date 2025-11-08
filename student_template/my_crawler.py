@@ -15,7 +15,13 @@ class MyCategorizedCrawler:
     def __init__(self):
         # TODO: Set up a requests session with appropriate headers
         # Hint: Use requests.Session() and set User-Agent header
-        self.session = None  # Replace with your session setup
+        self.session = requests.Session()  # Replace with your session setup
+        self.session.headers.update({
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15"
+        })
         
         # Create output directory if it doesn't exist
         self.output_dir = "output"
@@ -23,13 +29,13 @@ class MyCategorizedCrawler:
         
         # Health topic keywords for auto-tagging
         self.health_keywords = {
-            'flu': ['flu', 'influenza', 'flu shot'],
-            'covid19': ['covid', 'covid-19', 'coronavirus'],
-            'vaccination': ['vaccine', 'vaccination', 'immunization'],
-            'pediatric': ['pediatric', 'children', 'kids', 'child'],
-            'dental': ['dental', 'dentist', 'teeth'],
-            'mental_health': ['mental health', 'counseling'],
-            'emergency': ['emergency', 'er', '24 hour'],
+            'flu': [r'flu', r'influenza', r'flu shot'],
+            'covid19': [r'covid', r'covid-19', r'coronavirus'],
+            'vaccination': [r'vaccine', r'vaccination', r'immunization'],
+            'pediatric': [r'pediatric', r'children', r'kids', r'child'],
+            'dental': [r'dental', r'dentist', r'teeth'],
+            'mental_health': [r'mental health', r'counseling'],
+            'emergency': [r'emergency', r' er(.| )', r'24 hour'],
             # TODO: Add more keywords as you find them!
         }
     
@@ -47,14 +53,15 @@ class MyCategorizedCrawler:
         try:
             print(f"Fetching: {url}")
             # TODO: Implement page fetching logic
-            response = None  # Replace with actual request
-            soup = None      # Replace with actual parsing
+            response = self.session.get(url)  # Replace with actual request
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')      # Replace with actual parsing
             return soup
         except Exception as e:
             print(f"Error fetching {url}: {e}")
             return None
     
-    def auto_tag_resource(self, text, context=""):
+    def auto_tag_resource(self, text: str, context=""):
         """
         TODO: Automatically assign tags based on keywords
         
@@ -70,8 +77,8 @@ class MyCategorizedCrawler:
         for tag, keywords in self.health_keywords.items():
             # TODO: Check if any keyword appears in full_text
             # Hint: Use 'any(keyword in full_text for keyword in keywords)'
-            pass
-        
+            if any(keyword in re.findall(keyword, full_text) for keyword in keywords):
+                found_tags.append(tag)
         return found_tags
     
     def find_phone_numbers(self, text, context=""):
@@ -84,19 +91,19 @@ class MyCategorizedCrawler:
         - 555.123.4567
         """
         phone_numbers = []
-        
+                
         # TODO: Create regex patterns for phone numbers
         patterns = [
             # Add your patterns here
-            # Example: r'\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b'
+            r'[0-9]{3}-[0-9]{3}-[0-9]{4}',
+            r'\([0-9]{3}\) [0-9]{3}-[0-9]{4}',
+            r'[0-9]{3}\.[0-9]{3}\.[0-9]{4}',
         ]
         
         # TODO: Use re.findall to find matches for each pattern
         for pattern in patterns:
-            # matches = re.findall(pattern, text)
-            # phone_numbers.extend(matches)
-            pass
-        
+            matches = re.findall(pattern, text)
+            phone_numbers.extend(matches)
         # Remove duplicates
         unique_phones = list(set(phone_numbers))
         
@@ -119,7 +126,7 @@ class MyCategorizedCrawler:
         
         return results
     
-    def find_addresses(self, soup, context=""):
+    def find_addresses(self, soup: BeautifulSoup, context=""):
         """
         TODO: Look for addresses in the HTML
         
@@ -129,13 +136,14 @@ class MyCategorizedCrawler:
         - Text that contains street names and numbers
         """
         results = []
-        
+                        
         # TODO: Use soup.select() to find elements that might contain addresses
         address_selectors = [
             '.address',
             '.location', 
             '.contact-info',
             'address',  # HTML address tag
+            '.fb__facility-address',
             # TODO: Add more selectors you discover
         ]
         
@@ -144,7 +152,7 @@ class MyCategorizedCrawler:
             elements = soup.select(selector)
             for element in elements:
                 text = element.get_text(strip=True)
-                
+                                
                 # TODO: Check if text looks like an address
                 if self.looks_like_address(text):
                     tags = self.auto_tag_resource(text, context)
@@ -300,7 +308,7 @@ class MyCategorizedCrawler:
             'crawl_info': {
                 'url': results.get('url'),
                 'timestamp': results.get('timestamp'),
-                'student_name': 'YOUR_NAME_HERE'  # TODO: Put your name!
+                'student_name': 'Joshua Yamada'
             }
         }
         
@@ -356,7 +364,8 @@ if __name__ == "__main__":
     crawler = MyCategorizedCrawler()
     
     # TODO: Choose a website to test (start with a simple one!)
-    test_url = "https://www.cdc.gov/flu/treatment/index.html"
+    # test_url = "https://www.cdc.gov/flu/treatment/index.html"
+    test_url = "http://www.co.merced.ca.us/index.aspx?nid=82"
     
     print("Testing your crawler...")
     print("Make sure to complete the TODO sections first!")

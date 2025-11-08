@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "total_resources": 4,
+    "by_category": {
+      "CONTACT_INFO": 2,
+      "FACILITY": 2
+    },
+    "by_tag": {},
+    "crawl_info": {
+      "url": "http://www.co.merced.ca.us/index.aspx?nid=82",
+      "timestamp": "2025-11-08T14:35:16.070472",
+      "student_name": "Joshua Yamada"
+    }
+  },
+  "detailed_results": {
+    "url": "http://www.co.merced.ca.us/index.aspx?nid=82",
+    "timestamp": "2025-11-08T14:35:16.070472",
+    "resources": [
+      {
+        "category": "CONTACT_INFO",
+        "type": "phone_number",
+        "value": "(209) 381-1200",
+        "tags": [],
+        "context": "general page content"
+      },
+      {
+        "category": "CONTACT_INFO",
+        "type": "phone_number",
+        "value": "(209) 385-7434",
+        "tags": [],
+        "context": "general page content"
+      },
+      {
+        "category": "FACILITY",
+        "type": "facility_name",
+        "value": "Public Health Spotlights",
+        "tags": [],
+        "context": "page headings"
+      },
+      {
+        "category": "FACILITY",
+        "type": "facility_name",
+        "value": "Department of Public Health",
+        "tags": [],
+        "context": "page headings"
+      }
+    ]
+  }
+}
