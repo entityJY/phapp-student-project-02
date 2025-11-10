@@ -1,0 +1,4 @@
+County,Department,URL,Phones Found,Addresses Found,Facilities Found,Total Resources,Status
+Alameda County,us-ca-alameda,http://www.acphd.org,2,0,1,3,SUCCESS
+Alpine County,us-ca-alpine,https://www.alpinecountyca.gov/552/Health-Human-Services,0,0,0,0,SUCCESS
+Amador County,us-ca-amador,https://www.amadorgov.org/departments/health-human-services,2,0,1,3,SUCCESS

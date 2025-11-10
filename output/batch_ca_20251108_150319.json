@@ -1,0 +1,79 @@
+{
+  "crawl_info": {
+    "state": "CA",
+    "timestamp": "2025-11-08T15:03:19.537990",
+    "total_sites": 3,
+    "successful_crawls": 3,
+    "student_name": "YOUR_NAME_HERE"
+  },
+  "results": [
+    {
+      "url": "http://www.acphd.org",
+      "timestamp": "2025-11-08T15:03:13.686395",
+      "resources": [
+        {
+          "category": "CONTACT_INFO",
+          "type": "phone_number",
+          "value": "510-267-3230",
+          "tags": [],
+          "context": "general page content"
+        },
+        {
+          "category": "CONTACT_INFO",
+          "type": "phone_number",
+          "value": "(510) 267-8000",
+          "tags": [],
+          "context": "general page content"
+        },
+        {
+          "category": "FACILITY",
+          "type": "facility_name",
+          "value": "Alameda County Public Health Department",
+          "tags": [],
+          "context": "page headings"
+        }
+      ],
+      "county": "Alameda County",
+      "department_name": "us-ca-alameda",
+      "population": "Unknown"
+    },
+    {
+      "url": "https://www.alpinecountyca.gov/552/Health-Human-Services",
+      "timestamp": "2025-11-08T15:03:16.489817",
+      "resources": [],
+      "county": "Alpine County",
+      "department_name": "us-ca-alpine",
+      "population": "Unknown"
+    },
+    {
+      "url": "https://www.amadorgov.org/departments/health-human-services",
+      "timestamp": "2025-11-08T15:03:19.537848",
+      "resources": [
+        {
+          "category": "CONTACT_INFO",
+          "type": "phone_number",
+          "value": "(209) 223-6470",
+          "tags": [],
+          "context": "general page content"
+        },
+        {
+          "category": "CONTACT_INFO",
+          "type": "phone_number",
+          "value": "(209) 223-6500",
+          "tags": [],
+          "context": "general page content"
+        },
+        {
+          "category": "FACILITY",
+          "type": "facility_name",
+          "value": "Health & Human Services",
+          "tags": [],
+          "context": "page headings"
+        }
+      ],
+      "county": "Amador County",
+      "department_name": "us-ca-amador",
+      "population": "Unknown"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+BATCH CRAWLING REPORT - CA
+==================================================
+
+Crawled: 2025-11-08 15:07:31
+Total Sites: 15
+Successful: 15
+Failed: 0
+
+SUMMARY STATISTICS
+--------------------
+Total Resources Found: 111
+CONTACT_INFO: 40
+FACILITY: 67
+LOCATION: 4
+
+TOP COUNTIES BY RESOURCES FOUND
+-----------------------------------
+Fresno County: 14 resources
+Imperial County: 14 resources
+Humboldt County: 13 resources
+Butte County: 11 resources
+Glenn County: 11 resources
+Del Norte County: 10 resources
+Calaveras County: 7 resources
+El Dorado County: 7 resources
+Contra Costa County: 6 resources
+Inyo County: 5 resources
+Colusa County: 4 resources
+Alameda County: 3 resources
+Amador County: 3 resources
+Kern County: 3 resources
+Alpine County: 0 resources
+
+Detailed results available in JSON format.

@@ -9,6 +9,7 @@ import json
 import os
 from datetime import datetime
 from my_crawler import MyCategorizedCrawler
+from pathlib import Path
 
 class MyBatchCrawler:
     def __init__(self):
@@ -32,17 +33,17 @@ class MyBatchCrawler:
         
         # TODO: Open and read the CSV file
         # Hint: Use csv.DictReader
-        filename = f"../data/state_websites/us-{state_code.lower()}.csv"
+        filename = f"{str(Path(__file__).absolute())[:-20]}/../data/websites/us-{state_code.lower()}.csv"
         
         try:
             # TODO: Read each row and add to websites list
             with open(filename, 'r', newline='', encoding='utf-8') as file:
-                reader = csv.DictReader(file)
+                reader = csv.DictReader(file, delimiter=';')
                 for row in reader:
                     websites.append({
-                        'county': row['county'],
-                        'department_name': row['department_name'],
-                        'website_url': row['website_url'],
+                        'county': row['name'],
+                        'department_name': row['community_id'],
+                        'website_url': row['pha_url'],
                         'population': row.get('population', 'Unknown')
                     })
             
@@ -295,8 +296,8 @@ if __name__ == "__main__":
         print(f"Found {len(websites)} health departments")
         
         # TODO: Crawl a few sites (start small!)
-        print(f"\nCrawling first 3 sites...")
-        results = batch_crawler.crawl_multiple_sites(websites, max_sites=3)
+        print(f"\nCrawling first 15 sites...")
+        results = batch_crawler.crawl_multiple_sites(websites, max_sites=15)
         
         # TODO: Show summary
         batch_crawler.print_batch_summary(results)
