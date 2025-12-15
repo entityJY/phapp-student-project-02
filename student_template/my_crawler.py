@@ -55,7 +55,7 @@ class MyCategorizedCrawler:
             # TODO: Implement page fetching logic
             response = self.session.get(url)  # Replace with actual request
             response.raise_for_status()
-            soup = BeautifulSoup(response.content, 'html.parser')      # Replace with actual parsing
+            soup = BeautifulSoup(response.content, 'html.parser')      # type: ignore # Replace with actual parsing
             return soup
         except Exception as e:
             print(f"Error fetching {url}: {e}")
@@ -164,7 +164,24 @@ class MyCategorizedCrawler:
                         'tags': tags,
                         'context': context
                     })
-        
+        if not results: # if no addresses are found when searching by javascript selectors, try searching by regex
+            #                  3957     North                                        Blah       Blvd
+            address_regex = r'[0-9]+ ((([nsew\.?])|(North)|(South)|(East)|(West)) )?[a-zA-Z]+ ((street)|(st)|(avenue)|(ave)|(road)|(rd)|(boulevard)|(blvd)|(drive)|(dr)|(lane)|(ln))'
+            matches = ["".join(x) for x in re.findall(address_regex, str(soup), re.IGNORECASE)]
+            
+            print(matches)
+            
+            for match in matches:
+                tags = self.auto_tag_resource(match, context)
+
+                results.append({
+                    'category': 'LOCATION',
+                    'type': 'address',
+                    'value': match,
+                    'tags': tags,
+                    'context': context
+                })
+
         return results
     
     def find_facilities(self, soup, context=""):
@@ -284,6 +301,7 @@ class MyCategorizedCrawler:
         facility_results = self.find_facilities(soup, "page headings")
         all_resources.extend(facility_results)
         
+        print("6")
         return {
             'url': url,
             'timestamp': datetime.now().isoformat(),
