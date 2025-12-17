@@ -7,6 +7,8 @@ This folder contains data files used for crawling and analysis.
 
 Contains CSV files for each US state, listing public health organizations and related metadata. Each file is named `us-XX.csv` where `XX` is the two-letter state code (e.g., `us-ca.csv` for California, `us-tx.csv` for Texas).
 
+Websites are accessed 1 by 1, with 2 seconds between each site
+
 ### CSV Format
 
 The CSV files use semicolon (`;`) as the delimiter. The main columns are:

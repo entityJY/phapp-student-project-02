@@ -1,4 +1,2 @@
 import re
-regex = r'[0-9]{3}\.[0-9]{3}\.[0-9]{4}'
-
-print(re.findall(regex, "jelkjalskdjf(756.837.1872jklejlkjasdf083-876jelkajslkdf"))
+print(re.search(r' N.', "240 N. Villa Ave.Willows,CA95677United States", re.IGNORECASE).group())

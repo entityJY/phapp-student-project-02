@@ -127,7 +127,7 @@ class MyBatchCrawler:
                 "timestamp": datetime.now().isoformat(),
                 "total_sites": len(results),
                 "successful_crawls": len([r for r in results if 'error' not in r]),
-                "student_name": "YOUR_NAME_HERE"  # TODO: Put your name!
+                "student_name": "Joshua Yamada"  # TODO: Put your name!
             },
             "results": results
         }

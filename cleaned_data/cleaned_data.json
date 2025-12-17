@@ -1,0 +1,649 @@
+{
+    "county_resources": [
+        {
+            "county": "Alameda County",
+            "department_name": "us-ca-alameda",
+            "population": "Unknown",
+            "link": "http://www.acphd.org",
+            "phone_numbers": [
+                {
+                    "number": "(510) 267 8000",
+                    "tags": []
+                },
+                {
+                    "number": "(510) 267 3230",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Alameda County Public Health Department",
+                    "tags": []
+                }
+            ],
+            "addresses": []
+        },
+        {
+            "county": "Alpine County",
+            "department_name": "us-ca-alpine",
+            "population": "Unknown",
+            "link": "https://www.alpinecountyca.gov/552/Health-Human-Services",
+            "phone_numbers": [],
+            "facility_names": [],
+            "addresses": []
+        },
+        {
+            "county": "Amador County",
+            "department_name": "us-ca-amador",
+            "population": "Unknown",
+            "link": "https://www.amadorgov.org/departments/health-human-services",
+            "phone_numbers": [],
+            "facility_names": [],
+            "addresses": []
+        },
+        {
+            "county": "Butte County",
+            "department_name": "us-ca-butte",
+            "population": "Unknown",
+            "link": "https://www.buttecounty.net/610/Public-Health",
+            "phone_numbers": [
+                {
+                    "number": "(530) 552 4000",
+                    "tags": []
+                },
+                {
+                    "number": "(530) 538 6588",
+                    "tags": []
+                },
+                {
+                    "number": "(530) 538 2165",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health",
+                    "tags": []
+                },
+                {
+                    "name": "Welcome to Butte County Public Health!",
+                    "tags": []
+                },
+                {
+                    "name": "Our Commitment to Health Equity",
+                    "tags": []
+                },
+                {
+                    "name": "Report a Health Emergency",
+                    "tags": [
+                        "emergency"
+                    ]
+                },
+                {
+                    "name": "Email Public Health",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Calaveras County",
+            "department_name": "us-ca-calaveras",
+            "population": "Unknown",
+            "link": "https://publichealth.calaverasgov.us/",
+            "phone_numbers": [
+                {
+                    "number": "(209) 754 1709",
+                    "tags": []
+                },
+                {
+                    "number": "(209) 754 6460",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health",
+                    "tags": []
+                },
+                {
+                    "name": "Calaveras County Community Health Improvement Plan 2024-27",
+                    "tags": []
+                },
+                {
+                    "name": "Calaveras County Community Health Assessment 2023",
+                    "tags": []
+                },
+                {
+                    "name": "Community Information Center",
+                    "tags": []
+                },
+                {
+                    "name": "Calaveras County Health Services Agency Privacy Notice.",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                },
+                {
+                    "address": "Unknown",
+                    "tags": []
+                },
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Colusa County",
+            "department_name": "us-ca-colusa",
+            "population": "Unknown",
+            "link": "https://www.countyofcolusa.org/99/Public-Health",
+            "phone_numbers": [
+                {
+                    "number": "(530) 458 0380",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health",
+                    "tags": []
+                },
+                {
+                    "name": "Colusa County Public Health Division",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "251 E. Webster Street  Colusa, CA 95932",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Contra Costa County",
+            "department_name": "us-ca-contra-costa",
+            "population": "Unknown",
+            "link": "https://www.cchealth.org",
+            "phone_numbers": [],
+            "facility_names": [
+                {
+                    "name": "Behavioral Health",
+                    "tags": []
+                },
+                {
+                    "name": "Health Plan",
+                    "tags": []
+                },
+                {
+                    "name": "Medical Center",
+                    "tags": []
+                },
+                {
+                    "name": "Behavioral Health Board",
+                    "tags": []
+                },
+                {
+                    "name": "Behavioral Health Board",
+                    "tags": []
+                },
+                {
+                    "name": "Behavioral Health Board",
+                    "tags": []
+                },
+                {
+                    "name": "Hospital Beds",
+                    "tags": [
+                        "hospital"
+                    ]
+                }
+            ],
+            "addresses": []
+        },
+        {
+            "county": "Del Norte County",
+            "department_name": "us-ca-del-norte",
+            "population": "Unknown",
+            "link": "https://www.co.del-norte.ca.us/departments/publichealth",
+            "phone_numbers": [
+                {
+                    "number": "(707) 465 1783",
+                    "tags": []
+                },
+                {
+                    "number": "(800) 446 4408",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 464 7235",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 464 7216",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 464 7224",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 465 6701",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 464 0861",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 464 3191",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health Branch",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "981 H Street  Crescent City, CA 95531",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "El Dorado County",
+            "department_name": "us-ca-el-dorado",
+            "population": "Unknown",
+            "link": "https://www.eldoradocounty.ca.gov/Health-Well-Being/Public-Health",
+            "phone_numbers": [],
+            "facility_names": [
+                {
+                    "name": "Public Health",
+                    "tags": []
+                },
+                {
+                    "name": "Contact the Public Health Division",
+                    "tags": []
+                },
+                {
+                    "name": "Clinical Services and Infectious Diseases",
+                    "tags": [
+                        "clinic"
+                    ]
+                },
+                {
+                    "name": "Health Education and Promotion",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health Laws, Codes, and County-Specific Data",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health Topics",
+                    "tags": []
+                },
+                {
+                    "name": "El Dorado County Statistical and Health Data",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Fresno County",
+            "department_name": "us-ca-fresno",
+            "population": "Unknown",
+            "link": "https://www.co.fresno.ca.us/departments/public-health",
+            "phone_numbers": [
+                {
+                    "number": "(559) 600 5956",
+                    "tags": []
+                },
+                {
+                    "number": "(559) 600 3200",
+                    "tags": []
+                },
+                {
+                    "number": "(800) 742 1011",
+                    "tags": []
+                },
+                {
+                    "number": "(559) 600 7687",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Welcome toPublic Health",
+                    "tags": []
+                },
+                {
+                    "name": "Children's Medical Services",
+                    "tags": [
+                        "pediatric"
+                    ]
+                },
+                {
+                    "name": "Community Health",
+                    "tags": []
+                },
+                {
+                    "name": "Environmental Health",
+                    "tags": [
+                        "mental_health"
+                    ]
+                },
+                {
+                    "name": "Fresno County Rural Mobile Health (RMH) Program",
+                    "tags": []
+                },
+                {
+                    "name": "Health Messages for Medical Providers",
+                    "tags": []
+                },
+                {
+                    "name": "Health Policy and Wellness",
+                    "tags": []
+                },
+                {
+                    "name": "Healthy Families Fresno County",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health Communication",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health Nursing",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Glenn County",
+            "department_name": "us-ca-glenn",
+            "population": "Unknown",
+            "link": "https://www.countyofglenn.net/dept/health-human-services/public-health/welcome",
+            "phone_numbers": [
+                {
+                    "number": "(530) 934 6431",
+                    "tags": []
+                },
+                {
+                    "number": "(530) 934 6463",
+                    "tags": []
+                },
+                {
+                    "number": "(530) 934 6588",
+                    "tags": []
+                },
+                {
+                    "number": "(530) 934 6588",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health",
+                    "tags": []
+                },
+                {
+                    "name": "Office of Traffic Safety Awards $305,635.00 Grant to Glenn County Health and Human Services Agency",
+                    "tags": []
+                },
+                {
+                    "name": "Glenn County Public Health\u2019s 2025 Seasonal Flu Shot Clinics",
+                    "tags": [
+                        "flu",
+                        "clinic"
+                    ]
+                },
+                {
+                    "name": "Public Health Contact Info",
+                    "tags": []
+                },
+                {
+                    "name": "To report a public health emergency after business hours",
+                    "tags": [
+                        "emergency"
+                    ]
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "240 N. Villa Ave.   Willows CA 95677",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Humboldt County",
+            "department_name": "us-ca-humboldt",
+            "population": "Unknown",
+            "link": "http://www.humboldtgov.org/330/Public-Health",
+            "phone_numbers": [
+                {
+                    "number": "(707) 445 6255",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 268 2105",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 6200",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 6211",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 6212",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 6215",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 7110",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 6201",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 445 6097",
+                    "tags": []
+                },
+                {
+                    "number": "(707) 476 4949",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health Services",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Imperial County",
+            "department_name": "us-ca-imperial",
+            "population": "Unknown",
+            "link": "https://www.icphd.org/",
+            "phone_numbers": [
+                {
+                    "number": "(800) 465 9007",
+                    "tags": []
+                },
+                {
+                    "number": "(800) 478 4650",
+                    "tags": []
+                },
+                {
+                    "number": "(442) 265 1444",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Imperial CountyPublic Health Department",
+                    "tags": []
+                },
+                {
+                    "name": "Imperial CountyPublic Health Department",
+                    "tags": []
+                },
+                {
+                    "name": "Imperial County Public Health Department",
+                    "tags": []
+                },
+                {
+                    "name": "THE IMPERIAL COUNTY PUBLIC HEALTH DEPARTMENT EARNS NATIONAL ACCREDITATION",
+                    "tags": []
+                },
+                {
+                    "name": "PUBLIC HEALTH OFFICIALS IDENTIFY MOSQUITO POOLS POSITIVE FOR ST. LOUIS ENCEPHALITIS",
+                    "tags": []
+                },
+                {
+                    "name": "ENVIRONMENTAL HEALTH DIVISION RELOCATES TO A NEW FACILITY",
+                    "tags": [
+                        "mental_health"
+                    ]
+                },
+                {
+                    "name": "PUBLIC HEALTH OFFICIALS IDENTIFY MOSQUITO POOLS POSITIVE FOR ST. LOUIS ENCEPHALITIS",
+                    "tags": []
+                },
+                {
+                    "name": "THE IMPERIAL COUNTY PUBLIC HEALTH DEPARTMENT EARNS NATIONAL ACCREDITATION",
+                    "tags": []
+                },
+                {
+                    "name": "PUBLIC HEALTH OFFICIALS IDENTIFY MOSQUITO POOLS POSITIVE FOR ST. LOUIS ENCEPHALITIS",
+                    "tags": []
+                },
+                {
+                    "name": "ENVIRONMENTAL HEALTH DIVISION RELOCATES TO A NEW FACILITY",
+                    "tags": [
+                        "mental_health"
+                    ]
+                },
+                {
+                    "name": "PUBLIC HEALTH OFFICIALS IDENTIFY MOSQUITO POOLS POSITIVE FOR ST. LOUIS ENCEPHALITIS",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Inyo County",
+            "department_name": "us-ca-inyo",
+            "population": "Unknown",
+            "link": "https://www.inyocounty.us/public-health-and-prevention",
+            "phone_numbers": [],
+            "facility_names": [
+                {
+                    "name": "Public Health and Prevention Division",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health Information for Marriage License Applicants",
+                    "tags": []
+                },
+                {
+                    "name": "2025-26 Health Officer Guidance",
+                    "tags": []
+                },
+                {
+                    "name": "Public Health and Prevention Division Documents",
+                    "tags": []
+                },
+                {
+                    "name": "2025-26 Health Officer Guidance",
+                    "tags": []
+                }
+            ],
+            "addresses": [
+                {
+                    "address": "Unknown",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "county": "Kern County",
+            "department_name": "us-ca-kern",
+            "population": "Unknown",
+            "link": "https://kernpublichealth.com/",
+            "phone_numbers": [
+                {
+                    "number": "(661) 321 3000",
+                    "tags": []
+                }
+            ],
+            "facility_names": [
+                {
+                    "name": "Public Health Catalog",
+                    "tags": []
+                },
+                {
+                    "name": "Clinic Locations",
+                    "tags": [
+                        "clinic"
+                    ]
+                }
+            ],
+            "addresses": []
+        }
+    ]
+}

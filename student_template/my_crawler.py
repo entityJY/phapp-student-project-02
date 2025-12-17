@@ -97,6 +97,7 @@ class MyCategorizedCrawler:
             # Add your patterns here
             r'[0-9]{3}-[0-9]{3}-[0-9]{4}',
             r'\([0-9]{3}\) [0-9]{3}-[0-9]{4}',
+            r'\([0-9]{3}\)[0-9]{3}-[0-9]{4}',
             r'[0-9]{3}\.[0-9]{3}\.[0-9]{4}',
         ]
         
@@ -166,7 +167,7 @@ class MyCategorizedCrawler:
                     })
         if not results: # if no addresses are found when searching by javascript selectors, try searching by regex
             #                  3957     North                                        Blah       Blvd
-            address_regex = r'[0-9]+ ((([nsew\.?])|(North)|(South)|(East)|(West)) )?[a-zA-Z]+ ((street)|(st)|(avenue)|(ave)|(road)|(rd)|(boulevard)|(blvd)|(drive)|(dr)|(lane)|(ln))'
+            address_regex = r'[0-9]+ (((n\.?)|(s\.?)|(e\.?)|(w\.?)|(north)|(south)|(east)|(west)) )?[a-zA-Z]+ ((st(reet)?)|(ave(nue)?)|(road)|(rd)|(boulevard)|(blvd)|(dr(ive)?)|(lane)|(ln))'
             matches = ["".join(x) for x in re.findall(address_regex, str(soup), re.IGNORECASE)]
             
             print(matches)

@@ -1,0 +1,64 @@
+{
+  	"$id": "https://",
+  	"$schema": "https://json-schema.org/draft/2020-12/schema",
+  	"description": "Contains phone numbers, facility names, and addresses of health resources",
+  	"title": "Health Resources",
+  	"type": "object",
+  	"properties": {
+    	"counties": {
+      		"type": "array",
+      		"items": {
+        		"type": "object",
+				"items": {
+					"county": "string",
+					"department_name": "string",
+					"population": "string",
+					"link": "string",
+					"phone_numbers": {
+						"description": "phone numbers found on the county website",
+						"type": "array",
+						"items": {
+							"type": "object",
+							"items": {
+								"number": "string",
+								"tags": {
+									"type": "array",
+									"items": "string"
+								}
+							}
+						}
+					},
+					"facility_names": {
+						"description": "facility names found on the county website",
+						"type": "array",
+						"items": {
+							"type": "object",
+							"items": {
+								"name": "string",
+								"tags": {
+									"type": "array",
+									"items": "string"
+								}
+							}
+						}
+					},
+					"addresses": {
+						"description": "Addresses found on the county website",
+						"type": "array",
+						"items": {
+							"type": "object",
+							"items": {
+								"address": "string",
+								"tags": {
+									"type": "array",
+									"items": "string"
+								}
+							}
+						}
+					}
+				}
+      		}
+    	}
+  	}
+}
+

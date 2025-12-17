@@ -1,0 +1,16 @@
+County,Department,URL,Phones Found,Addresses Found,Facilities Found,Total Resources,Status
+Alameda County,us-ca-alameda,http://www.acphd.org,2,0,1,3,SUCCESS
+Alpine County,us-ca-alpine,https://www.alpinecountyca.gov/552/Health-Human-Services,0,0,0,0,SUCCESS
+Amador County,us-ca-amador,https://www.amadorgov.org/departments/health-human-services,0,0,0,0,ERROR
+Butte County,us-ca-butte,https://www.buttecounty.net/610/Public-Health,3,1,5,9,SUCCESS
+Calaveras County,us-ca-calaveras,https://publichealth.calaverasgov.us/,2,3,5,10,SUCCESS
+Colusa County,us-ca-colusa,https://www.countyofcolusa.org/99/Public-Health,1,1,2,4,SUCCESS
+Contra Costa County,us-ca-contra-costa,https://www.cchealth.org,0,0,7,7,SUCCESS
+Del Norte County,us-ca-del-norte,https://www.co.del-norte.ca.us/departments/publichealth,8,1,1,10,SUCCESS
+El Dorado County,us-ca-el-dorado,https://www.eldoradocounty.ca.gov/Health-Well-Being/Public-Health,0,1,7,8,SUCCESS
+Fresno County,us-ca-fresno,https://www.co.fresno.ca.us/departments/public-health,4,1,10,15,SUCCESS
+Glenn County,us-ca-glenn,https://www.countyofglenn.net/dept/health-human-services/public-health/welcome,4,1,5,10,SUCCESS
+Humboldt County,us-ca-humboldt,http://www.humboldtgov.org/330/Public-Health,10,1,3,14,SUCCESS
+Imperial County,us-ca-imperial,https://www.icphd.org/,3,1,11,15,SUCCESS
+Inyo County,us-ca-inyo,https://www.inyocounty.us/public-health-and-prevention,0,1,5,6,SUCCESS
+Kern County,us-ca-kern,https://kernpublichealth.com/,1,0,2,3,SUCCESS
